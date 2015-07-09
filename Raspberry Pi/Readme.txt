@@ -1,0 +1,1 @@
+This folder is for python projects designed to run on the Raspberry Pi
