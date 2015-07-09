@@ -1,0 +1,1 @@
+This folder is for python projects related to Kodi, XBMC and Openelec.
