@@ -5,11 +5,10 @@ def roll():
     ##
     ## To Do:
     ##  1: Exploding dice.  i.e. 1d6x
-    ##  2: Fudge dice.  i.e. fate or f
+    ##  DONE* 2: Fudge dice.  i.e. fate or f
     ##  3: Multi dice roll.  i.e. 1d6x 1d8x
-    
-    x = 0
-    while x != 1:
+
+    while True:
         dietype = input("Die Type: ")
 
         ## Make d20 the default
@@ -36,7 +35,11 @@ def roll():
         ## Check for Exploding Dice
         #elif dietype.find('x') > 0:
             
-        ## Check to see if input is a multi-roll            
+        ## Check to see if input is a multi-roll
+        ## Note, this is not designed correctly.  For instance
+        ## If the roll is "d6" it will error out, because it
+        ## expects the "d" to be in the second or higher element.
+        ## I should find a better method.
         elif dietype.find('d') > 0:
             ## Break string into parts before and after 'd'
             dicenum = dietype[:dietype.find('d')]
