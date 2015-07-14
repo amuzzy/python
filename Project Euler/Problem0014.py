@@ -17,6 +17,9 @@
 def Problem14():
     ## This solution is not optimized.  I'm sure there is a way to do this
     ## faster.  Probably by skipping numbers it's already calculated.
+    ##
+    ## Also, I'm breaking style by using a print instead of a return
+    ## but that's because I wanted to see how fast the sequence grew.
     
     longestSequence = 0
 

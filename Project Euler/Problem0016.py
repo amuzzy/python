@@ -9,8 +9,12 @@
 def Problem16():
     x = 2 ** 1000
     total = 0
+
+    ## Treat the value as a string, read the characters from it and
+    ## add them up.
+    
     for everyChar in str(x):
         total += int(everyChar)
 
-    print(total)
+    return(total)
     
