@@ -14,14 +14,13 @@
 ##
 ## Answer: 837799
 
-def Problem14(target):
-    ## 'target' is expected int value of when to stop this loop.
+def Problem14():
     ## This solution is not optimized.  I'm sure there is a way to do this
     ## faster.  Probably by skipping numbers it's already calculated.
     
     longestSequence = 0
 
-    for everyNumber in range(1,target):
+    for everyNumber in range(1,1000000):
         sequenceLength = 1
         n = everyNumber
 
